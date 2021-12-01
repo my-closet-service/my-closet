@@ -1,0 +1,4 @@
+2021-12-01
+
+황남욱 : h2 Database 연동 테스트
+        서버 구동 후 http://localhost:1994/h2 접속 후 Connection
