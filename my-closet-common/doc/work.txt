@@ -2,3 +2,8 @@
 
 황남욱 : h2 Database 연동 테스트
         서버 구동 후 http://localhost:1994/h2 접속 후 Connection
+
+2021-12-03
+
+황남욱 : h2 Database Initialize 테스트
+        참고(https://leveloper.tistory.com/38)
