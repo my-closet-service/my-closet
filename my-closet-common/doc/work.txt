@@ -7,3 +7,5 @@
 
 황남욱 : h2 Database Initialize 테스트
         참고(https://leveloper.tistory.com/38)
+
+황남욱 : jpa 테스트 소스 커밋
