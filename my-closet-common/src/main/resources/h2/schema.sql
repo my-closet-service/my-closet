@@ -1,1 +1,1 @@
-create table test(seq numeric primary key);
+create table test(seq number(5) primary key);
