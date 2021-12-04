@@ -17,4 +17,9 @@ public class TestServiceImpl implements TestService {
     public List<Test> findAll(){
         return testRepository.findAll();
     }
+
+    @Override
+    public Test findById(Long seq) {
+        return testRepository.findById(seq).orElse(null);
+    }
 }
