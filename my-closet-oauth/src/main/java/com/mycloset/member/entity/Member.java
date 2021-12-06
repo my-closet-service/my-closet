@@ -1,22 +1,39 @@
 package com.mycloset.member.entity;
 
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Instant;
 
-@Entity
 @Data
+@Entity
+@Table(name="MEMBER")
 @NoArgsConstructor
-@AllArgsConstructor
 public class Member implements Serializable {
+
     @Id
-    @GeneratedValue
-    Long id;
-    String name;
-    String username;
+    @NotNull
+    @Column(name="USER_ID")
+    private String userId;
+
+    @Column(name="USER_PWD")
+    private String userPwd;
+
+    @Column(name="USER_NM")
+    private String userNm;
+
+    private String gender;
+
+    private Integer height;
+
+    private Integer weight;
+
+    @Column(name="PRIVATE_YN")
+    private String privateYn;
+
+    private Instant regdate;
 }
